@@ -2,13 +2,13 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# Example Knowledge Graph
+# Knowledge Graph
 knowledge_graph = {
     "JohnDoe": {"name": "John Doe", "age": 30, "occupation": "Engineer"},
     "NewYork": {"name": "New York", "population": 8000000, "location": "USA"}
 }
 
-# Example intents and corresponding SPARQL query templates
+# intents and corresponding SPARQL query templates
 intents = {
     "PersonInfo": "Tell me about <person>",
     "LocationInfo": "What is known about <location>"
